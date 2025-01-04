@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Modern Business</title>
+    <style>
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "brand-blue": "#4461F2",
+              navy: "#172554",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="min-h-screen bg-white">
+      <!-- Navigation -->
+      <nav class="container mx-auto px-4 py-4">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
+          <div
+            class="flex flex-col md:flex-row md:items-center md:space-x-28 space-y-4 md:space-y-0">
+            <div class="flex items-center space-x-2">
+              <div class="w-8 h-8 bg-blue-600"></div>
+              <span class="font-bold text-xl">Busdev</span>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:items-center md:space-x-8">
+              <a href="#" class="text-gray-800 font-semibold hover:text-blue-600">Service</a>
+              <a href="#" class="text-gray-800 font-semibold hover:text-blue-600">Why Us</a>
+              <a href="#" class="text-gray-800 font-semibold hover:text-blue-600">Testimonial</a>
+              <a href="#" class="text-gray-800 font-semibold hiver:text-blue-600">FAQ</a>
+              <a href="#" class="text-gray-800 font-semibold hover:text-blue-600">About</a>
+            </div>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-2 border-2 py-2 px-2 border-gray-200 cursor-pointer">
+              <svg class="w-5 h-5 text-gray-800" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span class="hidden md:inline font-semibold">+1 (555) 123-4567</span>
+            </div>
+            <button class="bg-blue-600 text-white px-6 py-2">Sign Up</button>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="flex flex-col mx-auto px-4 md:px-6 py-8 md:py-12 space-y-4 w-full">
+        <!-- Top Section -->
+        <div class="flex flex-col md:flex-row md:h-[43vh] w-full gap-6">
+          <!-- Left Section - Text -->
+          <div class="flex flex-col md:pl-44 justify-between w-full md:w-1/2 space-y-6 md:space-y-0">
+            <div>
+              <div class="text-brand-blue text-sm font-semibold tracking-wider mb-4">
+                <div class="h-[2px] w-12 bg-brand-blue mb-1"></div>
+                MODERN BUSINESS
+              </div>
+              <h1 class="text-4xl md:text-[5.5rem] leading-[1.1] font-semibold">
+                We spend one-third of our life at work.
+              </h1>
+            </div>
+            <!-- Navy Square -->
+            <div class="flex flex-row self-end w-20 h-20 bg-navy"></div>
+          </div>
+
+          <div
+            class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 w-full md:w-1/2">
+            <!-- Testimonial Card -->
+            <div class="w-full md:w-1/2">
+              <div
+                class="flex flex-col items-start justify-center bg-brand-blue p-8 md:p-16 h-full md:ml-8">
+                <div class="mb-6 md:mb-10">
+                  <img src="https://avatar.iran.liara.run/public" alt="Profile" class="rounded-full w-16 md:w-24 h-16 md:h-24">
+                </div>
+                <p
+                  class="text-white text-xl md:text-2xl font-light tracking-wider">
+                  " Your site is always my only go to option for fragrances "
+                </p>
+              </div>
+            </div>
+
+            <!-- Grid Pattern -->
+            <div class="w-full md:w-1/2 h-64 md:h-auto">
+              <div class="bg-navy w-full h-full relative">
+                <div
+                  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <div class="grid grid-cols-2 gap-1">
+                    <div class="w-8 h-8 bg-brand-blue"></div>
+                    <div class="w-8 h-8 bg-white"></div>
+                    <div></div>
+                    <div class="w-8 h-8 bg-brand-blue"></div>
+                  </div>
+                </div>
+                <div class="absolute inset-0">
+                  <div class="grid grid-cols-6 h-full">
+                    <div class="border-r border-b border-gray-700"></div>
+                    <div class="border-r border-b border-gray-700"></div>
+                    <div class="border-r border-b border-gray-700"></div>
+                    <div class="border-r border-b border-gray-700"></div>
+                    <div class="border-r border-b border-gray-700"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div
+          class="flex flex-col md:flex-row w-full md:h-[43vh] space-y-6 md:space-y-0 md:space-x-6 md:pl-6">
+          <!-- Left Images -->
+          <div
+            class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 justify-center h-full w-full md:w-1/2">
+            <div class="w-full h-64 md:h-auto">
+              <div class="w-full h-full overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blue Pattern" class="w-full h-full object-cover">
+              </div>
+            </div>
+            <div class="w-full h-64 md:h-auto">
+              <div class="w-full h-full bg-gray-100 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1589386417686-0d34b5903d23?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Professional" class="w-full h-full object-cover"> 
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Section -->
+          <div class="flex flex-col md:flex-row w-full md:w-1/2 space-y-6 md:space-y-0 md:space-x-6">
+            <!-- Stats Card -->
+            <div class="px-2 pr-5 w-full h-64 md:h-auto">
+              <div class="bg-navy w-full h-full p-8 space-y-4 flex flex-col justify-center items-center">
+                <div class="text-white text-6xl md:text-8xl font-semibold mb-4">
+                  3.2x
+                </div>
+                <div
+                  class="text-white text-center font-light text-xl md:text-2xl">
+                  Average Revenue Growth<br />
+                  per Successful Client
+                </div>
+              </div>
+            </div>
+            <div class="w-full h-64 md:h-auto">
+              <div class="w-full h-full bg-gray-100 overflow-hidden">
+                <img src="/design.png" alt="Professional" class="w-full h-full object-cover">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container mx-auto px-6 py-12 min-h-screen flex flex-row items-start">
+        <div class="flex flex-col md:flex-row justify-between md:items-start">
+          <div class="w-full md:w-1/2 space-y-8">
+            <div class="flex flex-col">
+              <div class="text-brand-blue text-sm font-semibold tracking-wider">
+                <div class="h-[2px] w-12 bg-brand-blue mb-1"></div>
+                ABOUT US
+              </div>
+            </div>
+            <h2 class="text-5xl md:text-6xl font-semibold leading-tight">
+              We are at the forefront of technological innovation.
+            </h2>
+            <p class="text-gray-600 text-lg leading-relaxed max-w-xl">
+              Our journey began over a decade ago, driven by a passion for
+              delivering cutting-edge solutions to businesses worldwide.
+            </p>
+            <div class="flex space-x-20 pt-8">
+              <div class="space-y-2">
+                <div class="text-5xl font-bold">15+</div>
+                <div class="text-gray-600">Years of Experience</div>
+              </div>
+              <div class="space-y-2">
+                <div class="text-5xl font-bold">5000+</div>
+                <div class="text-gray-600">Satisfied Clients</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full flex flex-col justify-center items-center md:w-1/2 relative mt-12 md:mt-12">
+             <img src="https://images.unsplash.com/photo-1589386417686-0d34b5903d23" alt="Business Professional" class="w-2/3 md:-ml-44 h-[500px] object-cover z-10">
+
+            <div class="absolute -bottom-16 -left-8">
+              <div class="grid grid-cols-2 gap-0">
+                <div class="w-16 h-16 bg-brand-blue"></div>
+                <div class="w-16 h-16 bg-brand-blue"></div>
+                <div class="w-16 h-16 bg-navy"></div>
+                <div class="w-16 h-16 bg-brand-blue"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto px-6 py-16">
+        <div class="mb-16">
+          <div class="text-blue-600 text-sm font-semibold tracking-wider">
+            <div class="h-[2px] w-12 bg-blue-600 mb-1"></div>
+            OUR PRODUCTS
+          </div>
+          <h2 class="text-4xl md:text-6xl font-bold mt-6 mb-4">
+            We spend one-third of<br />our life at work.
+          </h2>
+          <p class="text-gray-600 text-lg max-w-2xl">
+            Our open, positive, and proactive approach helps us find ways to
+            align your work environment with the culture.
+          </p>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- GridSense Analytics Platform -->
+          <div class="bg-gray-50 p-8 rounded-lg">
+            <div class="flex flex-col space-y-2 mb-6">
+              <div class="flex space-x-1">
+                <div class="w-4 h-4 bg-blue-600"></div>
+                <div class="w-4 h-4 bg-blue-600"></div>
+                <div class="w-4 h-4 bg-navy"></div>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">
+              GridSense Analytics Platform
+            </h3>
+            <p class="text-gray-600 mb-8">
+              The GridSense Analytics Platform is a state-of-the-art data
+              analysis tool designed to optimize business performance through
+              in-depth insights and predictive analytics.
+            </p>
+
+            <div class="space-y-4 mb-8">
+              <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Predictive Modeling</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Real-time Data Visualization</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Customizable Dashboards</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>AI-Driven Recommendations</span>
+              </div>
+            </div>
+
+            <button class="bg-blue-600 text-white px-6 py-2 rounded">
+              Read More
+            </button>
+          </div>
+
+          <div class="bg-gray-50 p-8 rounded-lg">
+            <div class="flex flex-col space-y-2 mb-6">
+              <div class="flex space-x-1">
+                <div class="w-4 h-4 bg-blue-600"></div>
+                <div class="w-4 h-4 bg-navy"></div>
+                <div class="w-4 h-4 bg-blue-600"></div>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">OmniConnect CRM Suite</h3>
+            <p class="text-gray-600 mb-8">
+              OmniConnect CRM Suite is a comprehensive customer relationship
+              management tool that streamlines interactions and enhances
+              customer satisfaction.
+            </p>
+
+            <div class="space-y-4 mb-8">
+              <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>360-Degree Customer View</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Automated Workflows</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Multi-Channel Integration</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"  stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Analytics & Reporting</span>
+              </div>
+            </div>
+
+            <button class="bg-blue-600 text-white px-6 py-2 rounded">
+              Read More
+            </button>
+          </div>
+
+          <!-- CyberGuard Security Suite -->
+          <div class="bg-gray-50 p-8 rounded-lg">
+            <div class="flex flex-col space-y-2 mb-6">
+              <div class="flex space-x-1">
+                <div class="w-4 h-4 bg-blue-600"></div>
+                <div class="w-4 h-4 bg-blue-600"></div>
+                <div class="w-4 h-4 bg-blue-600"></div>
+              </div>
+            </div>
+
+            <h3 class="text-2xl font-bold mb-4">CyberGuard Security Suite</h3>
+            <p class="text-gray-600 mb-8">
+              The CyberGuard Security Suite offers robust cybersecurity
+              solutions to safeguard your business from evolving threats and
+              vulnerabilities.
+            </p>
+
+            <div class="space-y-4 mb-8">
+              <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Threat Detection & Response</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5 text-blue-600"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Continuous Monitoring</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Security Training & Awareness</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Customizable Security Policies</span>
+              </div>
+            </div>
+
+            <button class="bg-blue-600 text-white px-6 py-2 rounded">
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto px-6 py-8 relative md:min-h-screen">
+        <div class="flex flex-col md:flex-row items-center md:item-start gap-12">
+          <!-- Left Side with Image and Patterns -->
+          <div class="w-full md:w-1/2 relative md:mt-72">
+            <!-- Background Patterns -->
+            <div class="absolute md:-bottom-16 md:-left-16">
+              <div class="grid grid-cols-2">
+                <div class="w-16 h-16 bg-navy"></div>
+                <div class="w-16 h-16 bg-navy"></div>
+                <div class="w-16 h-16 bg-blue-600"></div>
+                <div class="w-16 h-16 bg-navy"></div>
+              </div>
+            </div>
+
+            <!-- Main Image -->
+            <div class="relative bg-gray-100 z-10 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                alt="Business professional"
+                class="w-full h-[600px] object-cover"
+              />
+            </div>
+          </div>
+
+          <!-- Right Side Content -->
+          <div class="w-full md:w-1/2">
+            <!-- Section Header -->
+            <div class="mb-6">
+              <div class="text-blue-600 text-sm font-semibold tracking-wider">
+                <div class="h-[2px] w-12 bg-blue-600 mb-1"></div>
+                WORK WITH US
+              </div>
+            </div>
+
+            <!-- Main Content -->
+            <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+              Driving Your Success Through Innovation and Expertise
+            </h2>
+
+            <p class="text-gray-600 text-lg mb-8">
+              Partnering with us means unlocking unparalleled technological
+              advancements tailored to fuel your growth. At Busdev, we're
+              dedicated to being your strategic partner in success
+            </p>
+
+            <!-- Testimonial -->
+            <div class="mb-8">
+              <blockquote class="text-xl font-medium italic mb-4">
+                "Working with Busdev has been a game-changer for our business.
+                Their solutions have significantly boosted our efficiency."
+              </blockquote>
+              <p class="text-gray-600">
+                Michael Smith, CTO at LMN Enterprises.
+              </p>
+            </div>
+
+            <!-- Buttons -->
+            <div class="flex space-x-4">
+              <button class="bg-blue-600 text-white px-6 py-2">About Us</button>
+              <button class="border-2 border-gray-200 text-gray-800 px-6 py-2">
+                Mission & Values
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonials Section -->
+      <div class="container mx-auto px-4 py-16 mt-36">
+        <!-- Header -->
+        <div class="mb-12">
+          <div class="text-brand-blue text-sm font-semibold tracking-wider mb-2">
+            <div class="h-[2px] w-12 bg-brand-blue mb-1"></div>
+            TESTIMONIALS
+          </div>
+          <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+            <h2 class="text-4xl md:text-5xl font-bold">
+              Client Success Stories:<br />What Our Partners Say
+            </h2>
+            <p class="text-gray-600 max-w-xl">
+              Discover the impact Busdev has made on businesses worldwide
+              through firsthand accounts from our valued partners. Explore how
+              our innovative solutions and unwavering commitment to excellence.
+            </p>
+          </div>
+        </div>
+
+        <!-- Testimonials Container -->
+        <div class="relative">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Active Testimonial -->
+            <div class="bg-navy text-white p-8 md:p-12">
+              <p class="text-xl md:text-2xl font-light mb-8 leading-relaxed">
+                Busdev's proactive approach and innovative solutions have been
+                instrumental in transforming our digital landscape. Their
+                adaptability and professionalism make them an invaluable asset
+                to our company.
+              </p>
+              <div class="flex items-center gap-4">
+                <img src="https://avatar.iran.liara.run/public" alt="David Smith" class="rounded-full w-12 h-12">
+                <div>
+                  <h4 class="font-semibold">David Smith</h4>
+                  <p class="text-gray-300 text-sm">CEO at XYZ Innovations.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Inactive Testimonial -->
+            <div class="bg-gray-100 p-8 md:p-12">
+              <p class="text-xl md:text-2xl font-light mb-8 leading-relaxed">
+                Working with Busdev has been a game-changer for us. Their
+                seamless integration of technology and business strategies has
+                significantly increased our efficiency and competitive edge in
+                the market.
+              </p>
+              <div class="flex items-center gap-4">
+                <img src="https://avatar.iran.liara.run/public" alt="Emily Davis" class="rounded-full w-12 h-12">
+                <div>
+                  <h4 class="font-semibold">Emily Davis</h4>
+                  <p class="text-gray-600 text-sm">
+                    CTO at InnovateTech Solutions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <button class="absolute top-1/2 -left-4 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-lg hidden md:flex items-center justify-center w-10 h-10">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+          </button>
+          <button class="absolute top-1/2 -right-4 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-lg hidden md:flex items-center justify-center w-10 h-10">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <div class="container mx-auto px-4 py-12 md:py-20">
+        <div class="flex flex-col md:flex-row md:item-start gap-8">
+          <!-- Left Content -->
+          <div class="w-full md:w-1/2 flex flex-col justify-center">
+            <div class="max-w-xl">
+              <div class="text-brand-blue text-sm font-semibold tracking-wider mb-4">
+                <div class="h-[2px] w-12 bg-brand-blue mb-1"></div>
+                MODERN BUSINESS
+              </div>
+              <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-8">
+                We spend one-third of our life at work.
+              </h1>
+              <button
+                class="bg-brand-blue text-white px-8 py-4 text-lg font-medium hover:bg-blue-700 transition-colors">
+                Get Started Now
+              </button>
+            </div>
+          </div>
+
+          <div class="w-full md:w-1/2 relative h-[700px] md:mt-56">
+            <div class="absolute top-24 right-0 w-[calc(100%-96px)] h-[calc(100%-96px)] bg-teal-500 overflow-hidden">
+              <img src="pp.png" alt="Glowing hand" class="w-full h-full object-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+
+  
+      <footer class="bg-white py-10">
+        <div class="container mx-auto px-6 md:flex space-x-20 justify-between">
+          <!-- About Section -->
+          <div class="mb-6 md:mb-0 md:w-1/3">
+            <p class="text-gray-800 text-lg font-semibold mb-4">
+              We make onboarding new employees ridiculously easy. On day one,
+              they’re ready to go. And retaining them is easier.
+            </p>
+            <div class="flex flex-row items-center space-x-2">
+
+           
+            <p class="text-gray-600">Follow us on:</p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fa fa-linkedin"></i></a>
+              <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fa fa-youtube"></i></a>
+              <a href="#" class="text-gray-600 hover:text-gray-900"><i class="fa fa-facebook"></i></a>
+            </div>
+          </div>
+          </div>
+
+          <!-- Navigation Links -->
+          <div class="md:w-1/3 mb-6 md:mb-0">
+            <ul class="space-y-2 font-semibold">
+              <li>
+                <a href="#" class="text-gray-600 hover:text-gray-900">Home</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-gray-900">Why Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-gray-900">Deals</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="md:w-1/3">
+            <ul class="space-y-2 font-semibold">
+              <li>
+                <a href="#" class="text-gray-600 hover:text-gray-900">Services</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-gray-900">Case Studies</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-gray-900">Plans</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="md:w-1/3">
+            <ul class="space-y-2 font-semibold">
+              <li>
+                <a href="#" class="text-gray-600 hover:text-gray-900"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-gray-900">About</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-600 hover:text-gray-900">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
